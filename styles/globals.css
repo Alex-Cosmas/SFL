@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* .my-header {
+    @apply .text-blue .font-sans .text-xl .bg-white .flex .justify-between .items-center .px-4;
+  } */
+  .mdf-h1 {
+    @apply text-6xl text-secondary;
+  }
+  .mdf-h2 {
+    @apply text-3xl;
+  }
+  .padding-10 {
+    @apply py-10;
+  }
+  .margin-10 {
+    @apply my-10;
+  }
+  .margin-16 {
+    @apply my-16;
+  }
+  .margin-20 {
+    @apply my-20;
+  }
+}
