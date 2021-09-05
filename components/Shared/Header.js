@@ -64,8 +64,25 @@ function Header({ cart }) {
             </Link>
 
             <Link href='/cart'>
-              <a className='items-center justify-center w-full px-5 py-2 bg-beige text-secondary hover:font-bold lg:inline-flex lg:w-auto hover:text-secondary'>
-                Cart {cart?.context?.items?.length}
+              <a className='flex items-center justify-center w-full px-5 py-2 space-x-4 transition duration-200 ease-in-out rounded-sm shadow-md bg-beige text-secondary hover:font-bold lg:inline-flex lg:w-auto hover:text-secondary'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  className='w-6 h-6 mr-2'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z'
+                  />
+                </svg>
+                Cart{' '}
+                <span className='font-bold text-secondary'>
+                  {cart?.context?.items?.length}
+                </span>
               </a>
             </Link>
           </div>

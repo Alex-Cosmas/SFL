@@ -22,7 +22,7 @@ export default function SharedHero({ title }) {
         <div className='container relative mx-auto'>
           <div className='w-full px-4 ml-auto mr-auto text-center lg:w-7/12'>
             <div>
-              <div className='text-4xl font-semibold text-white'>{title}</div>
+              <div className='font-semibold text-white text-7xl'>{title}</div>
             </div>
             {/* <div>
               <p className='mt-4 text-lg text-gray-300'>
