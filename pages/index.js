@@ -19,7 +19,7 @@ function Home(props) {
 
       <main>
         {/* <HeroComponent /> */}
-        <Carousel />
+        <Carousel title='Freshly Baked ' tag='Every Day' />
       </main>
     </>
   )
