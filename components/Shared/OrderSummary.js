@@ -1,4 +1,5 @@
 import Toggle from '~/components/Shared/Toggle'
+import OrderButton from '~/components/Shared/OrderButton'
 
 export default function OrderSummary() {
   return (
@@ -66,11 +67,8 @@ export default function OrderSummary() {
           <div className='text-xl font-bold text-orange-900'>Total Amount</div>
           <div className='text-2xl font-bold text-orange-900'>$114</div>
         </div>
-        <button className='w-full px-4 py-4 mt-3 font-bold rounded shadow bg-secondary text-beige hover:text-secondary hover:bg-primary'>
-          ADD CONTACT DETAILS
-          {/* CONFIRM DETAILS */}
-          {/* PROCEED TO CHECKOUT SCREEN */}
-        </button>
+
+        <OrderButton buttonState='ADD CONTACT DETAILS' />
       </div>
     </>
   )

@@ -66,11 +66,6 @@ function Header() {
                 Profile
               </a>
             </Link>
-            <Link href='/contact'>
-              <a className='items-center justify-center w-full px-5 py-2 bg-beige text-secondary hover:font-bold lg:inline-flex lg:w-auto hover:text-secondary'>
-                Contact Us
-              </a>
-            </Link>
           </div>
         </div>
       </nav>
@@ -79,22 +74,3 @@ function Header() {
 }
 
 export default Header
-
-{
-  /* <nav className='container absolute top-0 z-50 flex items-center w-full py-3 mx-auto'>
-        <div className='w-full bg-beige'>
-          <div className='relative items-center w-24 h-24 p-2 mr-4 even:inline-flex '>
-            <Link href='/'>
-              <a>
-                <Image
-                  src='/SFL.svg'
-                  alt='HeroBg'
-                  layout='fill'
-                  objectFit='contain'
-                />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </nav> */
-}

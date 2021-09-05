@@ -92,6 +92,7 @@ Cheryl's Cookies
 Tailwind Play
 
 Components
+https://play.tailwindcss.com/cUgXVWPjZS?layout=horizontal
 
 https://play.tailwindcss.com/23oKKPKObT?layout=horizontal
 
