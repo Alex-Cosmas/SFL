@@ -43,7 +43,7 @@ export default function Components(props) {
               3. Cart Component
             </p>
           </div>
-          <CartComponent />
+          <CartComponent current={props.current} addItem={props.addItem} />
 
           <hr className='my-3 border-b-1 text-secondary' />
 

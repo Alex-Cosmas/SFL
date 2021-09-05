@@ -11,7 +11,9 @@ export default function CartItem({ itemCtx, send }) {
 
       <div className="flex-auto p-6 bg-white shadow-md">
         <div className="flex flex-wrap">
-          <h1 className="flex-auto text-xl font-semibold">{itemCtx.context.name}</h1>
+          <h1 className="flex-auto text-xl font-semibold">
+            {itemCtx.context.name}
+          </h1>
           <div className="flex-none w-full my-1 text-sm font-medium text-gray-500">
             Extra Details: With Extra Cream
           </div>
@@ -22,7 +24,10 @@ export default function CartItem({ itemCtx, send }) {
               <button
                 className="flex items-center justify-center px-2 py-1 border border-gray-300 rounded-md"
                 type="button"
-                onClick={() => send("UPDATE", { ...itemCtx })}
+                onClick={() => {
+                  send("UPDATE", { ...itemCtx });
+                  send("CALCULATETOTAL");
+                }}
               >
                 +
               </button>

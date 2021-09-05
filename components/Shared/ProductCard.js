@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import WishList from '~/components/Shared/WishList'
 
-export default function ProductCard({ product, addItem }) {
+export default function ProductCard({ product, addItem, currency }) {
   return (
     <div>
       <div className='my-10 shadow-md h-[400px] hover:bg-white hover:text-secondary hover:font-semibold bg-beige  hover:cursor-pointer'>
@@ -16,7 +16,7 @@ export default function ProductCard({ product, addItem }) {
         <div className='flex flex-col flex-auto p-6'>
           <div className='flex flex-col flex-1'>
             <h2>{product.name}</h2>
-            <h2>{product.amount}</h2>
+            <h2>{currency} {product.amount}</h2>
           </div>
           <div className='flex flex-wrap content-end '>
             <WishList />

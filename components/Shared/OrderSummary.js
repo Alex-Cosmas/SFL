@@ -3,7 +3,7 @@ import OrderButton from "~/components/Shared/OrderButton";
 import { useMachine, useService } from "@xstate/react";
 
 export default function OrderSummary({ current, addItem }) {
- 
+  console.log(addItem)
   return (
     <>
       <div className="px-8 py-4 bg-white rounded shadow">
@@ -11,13 +11,13 @@ export default function OrderSummary({ current, addItem }) {
           <div className="flex items-center justify-between mt-4">
             <h3 className="text-xl font-bold">Order Summary</h3>
             {/* Toogle Price  */}
-            <Toggle priceToggle="Currency Switch" />
+            <Toggle priceToggle="Currency Switch" addItem={addItem} />
           </div>
 
           {current.context.items.map((item, idx) => {
-             // eslint-disable-next-line react-hooks/rules-of-hooks
-             const [state, send] = useService(item.ref);
-             const itemCtx = state;
+            // eslint-disable-next-line react-hooks/rules-of-hooks
+            const [state, send] = useService(item.ref);
+            const itemCtx = state;
             return (
               <div
                 key={idx}
@@ -36,8 +36,11 @@ export default function OrderSummary({ current, addItem }) {
                 </div>
                 <div>
                   <h4 className="text-3xl font-medium">
-                    <sup className="text-lg text-purple-800">{current.context.currency}</sup>{" "}
-                    {parseFloat(itemCtx.context.amount) * itemCtx.context.quantity}
+                    <sup className="text-lg text-purple-800">
+                      {current.context.currency}
+                    </sup>{" "}
+                    {parseFloat(itemCtx.context.amount) *
+                      itemCtx.context.quantity}
                   </h4>
                 </div>
               </div>
@@ -46,7 +49,10 @@ export default function OrderSummary({ current, addItem }) {
         </div>
         <div className="flex justify-between p-4 mt-3">
           <div className="text-xl font-bold text-orange-900">Total Amount</div>
-          <div className="text-2xl font-bold text-orange-900">$114</div>
+          <div className="text-2xl font-bold text-orange-900">
+            {current.context.currency}
+            {current.context.total}
+          </div>
         </div>
 
         <OrderButton buttonState="ADD CONTACT DETAILS" />

@@ -5,6 +5,7 @@ import { useMachine, useService } from "@xstate/react";
 import CartItem from "./CartItem";
 
 export default function CartComponent({ current, addItem }) {
+  console.log(addItem)
   return (
     <>
       <div className="grid grid-cols-2 gap-10">
@@ -40,7 +41,8 @@ export default function CartComponent({ current, addItem }) {
                           className="flex items-center justify-center px-2 py-1 border border-gray-300 rounded-md"
                           type="button"
                           onClick={() => {
-                            send("INC", { ...itemCtx })
+                            send("INC", { ...itemCtx });
+                            send("CALCULATETOTAL");
                             // itemCtx.context.quantity++
                           }}
                         >
@@ -51,8 +53,8 @@ export default function CartComponent({ current, addItem }) {
                           className="flex items-center justify-center px-2 py-1 border border-gray-300 rounded-md"
                           type="button"
                           onClick={() => {
-                            send("DEC", { ...itemCtx })
-                            // itemCtx.context.quantity++
+                            send("DEC", { ...itemCtx });
+                            send("CALCULATETOTAL");
                           }}
                         >
                           -
@@ -61,7 +63,7 @@ export default function CartComponent({ current, addItem }) {
                     </div>
 
                     <div className="text-xl font-semibold text-gray-500">
-                    {current.context.currency} {itemCtx.context.amount}
+                      {current.context.currency} {itemCtx.context.amount}
                     </div>
                   </div>
                 </div>
@@ -70,7 +72,7 @@ export default function CartComponent({ current, addItem }) {
           })}
         </div>
         <div>
-          <OrderSummary current={current} />
+          <OrderSummary current={current}  addItem={addItem}/>
         </div>
       </div>
     </>
