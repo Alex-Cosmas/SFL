@@ -4,37 +4,25 @@ import ParentLayout from "~/components/Layout/ParentLayout";
 import Headline from "~/components/Shared/Headline";
 import ProductNav from "~/components/Shared/ProductNav";
 import { categoriesList, apiHelperFunctions } from "../../../lib/api";
-
+// import { useMachine } from "@xstate/rect";
+import ProductCard from "~/components/Shared/ProductCard";
 // const products = productsList;
 const categories = categoriesList;
 
-export default function Category({ params }) {
+export default function Category({ params, current, addItem }) {
+  console.log(current, "category page");
   const products = apiHelperFunctions.categoryProductsFilterd(params?.id);
   return (
     <>
-      <Headline title="Serving you gourmet delicacies any day, any time!!" />
+      <Headline
+        title="Serving you gourmet delicacies any day, any time!!"
+        cart={current}
+      />
       <ProductNav />
       <div className="container px-24 mx-auto">
         <div className="grid w-full grid-cols-3 gap-10">
           {products.map((d, idx) => {
-            return (
-              <div key={idx}>
-                <div className="my-10 shadow-md h-[400px] hover:bg-secondary hover:text-beige hover:font-semibold bg-primary  hover:cursor-pointer">
-                  <div className="relative h-[200px] ">
-                    <Image
-                      src="https://res.cloudinary.com/alexoc/image/upload/v1630669731/SFL/300x200_KRUH_tzytk1.jpg"
-                      alt="HeroBg"
-                      layout="fill"
-                      objectFit="cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h2>{d.name}</h2>
-                    <h2>{d.amount}</h2>
-                  </div>
-                </div>
-              </div>
-            );
+            return <ProductCard key={idx} product={d} addItem={addItem} />;
           })}
         </div>
       </div>

@@ -5,7 +5,7 @@ import UnStyled from '~/components/Layout/UnStyled'
 
 // import HeroComponent from '~/components/HomePage/Hero'
 
-function Home() {
+function Home(props) {
   return (
     <>
       <Head>
