@@ -93,6 +93,8 @@ Tailwind Play
 
 Components
 
+https://play.tailwindcss.com/23oKKPKObT?layout=horizontal
+
 https://play.tailwindcss.com/iRR06XbBJK?layout=horizontal
 
 https://play.tailwindcss.com/eRpsWEM3Tw?layout=horizontal
