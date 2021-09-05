@@ -1,4 +1,4 @@
-export default function Toggle() {
+export default function Toggle({ priceToggle }) {
   return (
     <>
       <div className='pb-5'>
@@ -13,7 +13,7 @@ export default function Toggle() {
             <div className='absolute w-6 h-6 transition rounded-full shadow dot bg-primary -left-1 -top-1'></div>
           </div>
           {/* Label */}
-          <div className='ml-3 font-medium text-gray-700'>Toggle Me!</div>
+          <div className='ml-3 font-medium text-gray-700'>{priceToggle}</div>
         </label>
       </div>
     </>

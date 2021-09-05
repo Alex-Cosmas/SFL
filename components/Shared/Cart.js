@@ -1,9 +1,11 @@
+import Toggle from './Toggle'
+
 export default function CartComponent() {
   return (
     <>
       <div className='grid grid-cols-2 gap-10'>
         <div>
-          <h3 className='px-0 py-4 mt-4 text-xl font-bold'>Order Summary</h3>
+          <h3 className='px-0 py-4 mt-4 text-xl font-bold'>Basket</h3>
 
           <div className='flex'>
             <div className='relative flex-none w-48'>
@@ -13,7 +15,7 @@ export default function CartComponent() {
                 className='absolute inset-0 object-cover w-full h-full'
               />
             </div>
-            <div className='flex-auto p-6 bg-primary'>
+            <div className='flex-auto p-6 bg-white shadow-md'>
               <div className='flex flex-wrap'>
                 <h1 className='flex-auto text-xl font-semibold'>Red Velvet</h1>
                 <div className='flex-none w-full my-1 text-sm font-medium text-gray-500'>
@@ -54,7 +56,7 @@ export default function CartComponent() {
                 className='absolute inset-0 object-cover w-full h-full'
               />
             </div>
-            <div className='flex-auto p-6 bg-primary'>
+            <div className='flex-auto p-6 bg-white shadow-md'>
               <div className='flex flex-wrap'>
                 <h1 className='flex-auto text-xl font-semibold'>Red Velvet</h1>
                 <div className='flex-none w-full my-1 text-sm font-medium text-gray-500'>
@@ -91,7 +93,11 @@ export default function CartComponent() {
         <div>
           <div className='px-8 py-4 bg-white rounded shadow'>
             <div>
-              <h3 className='mt-4 text-xl font-bold'>Order Summary</h3>
+              <div className='flex items-center justify-between mt-4'>
+                <h3 className='text-xl font-bold'>Order Summary</h3>
+                {/* Toogle Price  */}
+                <Toggle priceToggle='Currency Switch' />
+              </div>
 
               <div className='flex flex-wrap items-center justify-between w-full p-4 mt-5 border-b-2 rounded'>
                 <div className='w-2/3'>
@@ -151,7 +157,9 @@ export default function CartComponent() {
               <div className='text-2xl font-bold text-orange-900'>$114</div>
             </div>
             <button className='w-full px-4 py-4 mt-3 font-bold rounded shadow bg-secondary text-beige hover:text-secondary hover:bg-primary'>
-              PROCEED TO CHECKOUT SCREEN
+              ADD CONTACT DETAILS
+              {/* CONFIRM DETAILS */}
+              {/* PROCEED TO CHECKOUT SCREEN */}
             </button>
           </div>
         </div>

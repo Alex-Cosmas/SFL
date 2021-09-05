@@ -7,7 +7,7 @@ import CartComponent from '~/components/Shared/Cart'
 export default function Cart() {
   return (
     <>
-      <Headline title='Cart' />
+      <Headline title='My Cart' />
 
       <div className='container px-24 mx-auto'>
         <div className='my-10'>
