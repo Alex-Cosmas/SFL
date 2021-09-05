@@ -25,3 +25,17 @@
     @apply my-20;
   }
 }
+
+@layer components {
+  /* Toggle A */
+  input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #332421;
+  }
+
+  /* Toggle B */
+  input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #332421;
+  }
+}
