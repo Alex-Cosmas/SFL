@@ -2,7 +2,7 @@ import Toggle from "~/components/Shared/Toggle";
 import OrderButton from "~/components/Shared/OrderButton";
 import { useMachine, useService } from "@xstate/react";
 
-export default function OrderSummary({ current, addItem }) {
+export default function OrderSummary({ current, addItem , action}) {
   console.log(addItem)
   return (
     <>
@@ -55,7 +55,7 @@ export default function OrderSummary({ current, addItem }) {
           </div>
         </div>
 
-        <OrderButton buttonState="ADD CONTACT DETAILS" />
+        <OrderButton buttonState="ADD CONTACT DETAILS" action={action}/>
       </div>
     </>
   );

@@ -1,20 +1,27 @@
-import ParentLayout from '~/components/Layout/ParentLayout'
-import Headline from '~/components/Shared/Headline'
+import ParentLayout from "~/components/Layout/ParentLayout";
+import Headline from "~/components/Shared/Headline";
+import Form from "~/components/Shared/Form";
+import OrderSummary from "~/components/Shared/OrderSummary";
 
-import CartComponent from '~/components/Shared/Cart'
-
-export default function confirmOrder() {
+export default function confirmOrder({ current, addItem }) {
   return (
     <>
-      <Headline title='Confirm Order' />
+      <Headline title="Confirm Order" />
 
-      <div className='container px-24 mx-auto'>
-        <div className='my-10'>
-          <CartComponent />
+      <div className="container px-24 mx-auto">
+        <div className="my-10">
+          <div className="flex">
+            <Form />
+            <OrderSummary
+              current={current}
+              addItem={addItem}
+              action="confirm"
+            />
+          </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-confirmOrder.Layout = ParentLayout
+confirmOrder.Layout = ParentLayout;

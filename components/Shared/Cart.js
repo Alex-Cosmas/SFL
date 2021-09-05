@@ -19,7 +19,7 @@ export default function CartComponent({ current, addItem }) {
               <div key={idx} className="flex my-5">
                 <div className="relative flex-none w-48">
                   <img
-                    src="https://images.pexels.com/photos/1302883/pexels-photo-1302883.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                    src={itemCtx.context.img}
                     alt=""
                     className="absolute inset-0 object-cover w-full h-full"
                   />
@@ -72,7 +72,7 @@ export default function CartComponent({ current, addItem }) {
           })}
         </div>
         <div>
-          <OrderSummary current={current}  addItem={addItem}/>
+          <OrderSummary current={current}  addItem={addItem} action='complete'/>
         </div>
       </div>
     </>
