@@ -7,10 +7,10 @@ import Profile from '~/components/Shared/Profile'
 import ToastNotification from '~/components/Shared/ToastNotification'
 import Toggle from '~/components/Shared/Toggle'
 
-export default function Components() {
+export default function Components(props) {
   return (
     <>
-      <Headline title='Components' />
+      <Headline title='Components' cart={props.current} />
 
       <div className='container px-24 mx-auto'>
         <div className=''>
