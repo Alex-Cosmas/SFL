@@ -59,10 +59,38 @@ https://images.contentstack.io/v3/assets/blt72739032ac3bdcc6/blt07274e0afee9fff6
 https://images.contentstack.io/v3/assets/blt72739032ac3bdcc6/blt67c9d389ad1dcdd1/60a538ad5115075c49e50d6d/210519-WLF-Muffins&Breads-EnglishMuffin-Hero.jpg?quality=75&auto=webp&optimize={medium}
 
 Products
-Red Velvet, Black Forest and Chocolate fudge cake
-(1) Blueberry Muffin
-(1) Raspberry Bramble
+Cake
+Red Velvet
+Black Forest
+Chocolate fudge cake
 
+Muffin
+Blueberry Muffin
+
+Bramble
+Raspberry Bramble
+
+<!-- Tailwind Play -->
+
+Components
+https://play.tailwindcss.com/cUgXVWPjZS?layout=horizontal
+
+https://play.tailwindcss.com/23oKKPKObT?layout=horizontal
+
+https://play.tailwindcss.com/iRR06XbBJK?layout=horizontal
+
+https://play.tailwindcss.com/eRpsWEM3Tw?layout=horizontal
+
+https://play.tailwindcss.com/PT1hknS6dh
+
+https://play.tailwindcss.com/TGoWgNnq1z?layout=horizontal
+
+<!-- https://play.tailwindcss.com/hKloBHh2Db
+
+https://play.tailwindcss.com/4lFmAQ32Pi -->
+
+<!--
+UX Copy
 Muffins & Bread
 Experience the top-tier quality, delicious flavor, and wonderful texture of SFL Bakery® English muffins and breads.
 
@@ -87,23 +115,4 @@ Sweet Rolls
 Specialty
 Savory Baked Goods
 Gluten-Free
-Cheryl's Cookies
-
-Tailwind Play
-
-Components
-https://play.tailwindcss.com/cUgXVWPjZS?layout=horizontal
-
-https://play.tailwindcss.com/23oKKPKObT?layout=horizontal
-
-https://play.tailwindcss.com/iRR06XbBJK?layout=horizontal
-
-https://play.tailwindcss.com/eRpsWEM3Tw?layout=horizontal
-
-https://play.tailwindcss.com/PT1hknS6dh
-
-https://play.tailwindcss.com/TGoWgNnq1z?layout=horizontal
-
-<!-- https://play.tailwindcss.com/hKloBHh2Db
-
-https://play.tailwindcss.com/4lFmAQ32Pi -->
+Cheryl's Cookies -->
