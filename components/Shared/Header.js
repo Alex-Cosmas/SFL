@@ -85,23 +85,4 @@ function Header({ cart }) {
   );
 }
 
-export default Header;
-
-{
-  /* <nav className='container absolute top-0 z-50 flex items-center w-full py-3 mx-auto'>
-        <div className='w-full bg-beige'>
-          <div className='relative items-center w-24 h-24 p-2 mr-4 even:inline-flex '>
-            <Link href='/'>
-              <a>
-                <Image
-                  src='/SFL.svg'
-                  alt='HeroBg'
-                  layout='fill'
-                  objectFit='contain'
-                />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </nav> */
-}
+export default Header
