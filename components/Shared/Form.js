@@ -4,7 +4,7 @@ export default function Form() {
       <div className=''>
         <div className='flex flex-col px-8 pt-6 pb-8 mb-4 bg-white rounded shadow-md'>
           <div className='flex items-center justify-between my-4'>
-            <h3 className='text-xl font-bold'>Order Summary</h3>
+            <h3 className='text-xl font-bold'>Your Contact Details</h3>
           </div>
           <div className='mb-6 -mx-3 md:flex'>
             <div className='px-3 mb-6 md:w-1/2 md:mb-0'>

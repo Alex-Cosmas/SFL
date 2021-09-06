@@ -27,32 +27,6 @@ Dark Chocolate
 HEX #332421
 RGB (51, 36, 33)
 
-Process
-UX Design Decisions
-
-1. Create a Flow Chart to understand the required components.
-2. Design a low fidelity wireframe and know which components to build.
-3. Finding the right UX copy based on the layout choice. I went with the stacked layout due to
-   - Ease of extending a design system without forcing things + having a house of cards.
-   - Efficient building of reusable components and layouts for the entire application
-   - Scale management. If the application grows and there are future features to the added. We will not have a house of cards situation.
-
-UX Design & Development
-Tailwind + NextJS + 4. Templating
-_ Home Page
-_ Shop Page
-_ Category Page
-_ Product Page
-_ Components Page
-_ Profile Page \* Contact Page
-
-5. Development
-   Xstate for state manangement
-   _ Cart
-   _ Form validation
-   _ Carousels
-   _ Animations & Transistions
-
 Assets
 https://images.contentstack.io/v3/assets/blt72739032ac3bdcc6/blt07274e0afee9fff6/6059179fcc77b20f047a94a5/210319-GourmetGifts-BakeryTray-Hero.jpg?quality=75&auto=webp&optimize={medium}
 
@@ -84,6 +58,32 @@ https://play.tailwindcss.com/eRpsWEM3Tw?layout=horizontal
 https://play.tailwindcss.com/PT1hknS6dh
 
 https://play.tailwindcss.com/TGoWgNnq1z?layout=horizontal
+
+<!-- Process
+UX Design Decisions
+
+1. Create a Flow Chart to understand the required components.
+2. Design a low fidelity wireframe and know which components to build.
+3. Finding the right UX copy based on the layout choice. I went with the stacked layout due to
+   - Ease of extending a design system without forcing things + having a house of cards.
+   - Efficient building of reusable components and layouts for the entire application
+   - Scale management. If the application grows and there are future features to the added. We will not have a house of cards situation.
+
+UX Design & Development
+Tailwind + NextJS + 4. Templating
+_ Home Page
+_ Shop Page
+_ Category Page
+_ Product Page
+_ Components Page
+_ Profile Page \* Contact Page
+
+5. Development
+   Xstate for state manangement
+   _ Cart
+   _ Form validation
+   _ Carousels
+   _ Animations & Transistions -->
 
 <!-- https://play.tailwindcss.com/hKloBHh2Db
 

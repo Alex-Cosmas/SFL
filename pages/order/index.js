@@ -1,6 +1,5 @@
 import ParentLayout from '~/components/Layout/ParentLayout'
 import Headline from '~/components/Shared/Headline'
-import ProductNav from '~/components/Shared/ProductNav'
 import Form from '~/components/Shared/Form'
 
 import OrderSummary from '~/components/Shared/OrderSummary'
