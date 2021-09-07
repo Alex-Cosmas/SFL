@@ -16,8 +16,8 @@ export default function Category({ params, current, addItem }) {
     <>
       <Headline title='Any day, Any time!!' cart={current} />
       <ProductNav />
-      <div className='container px-24 mx-auto'>
-        <div className='grid w-full grid-cols-3 gap-10'>
+      <div className='container px-4 mx-auto md:px-24'>
+        <div className='grid w-full gap-10 md:grid-cols-3'>
           {products.map((d, idx) => {
             return (
               <ProductCard
