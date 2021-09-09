@@ -4,7 +4,7 @@ import Form from '~/components/Shared/Form'
 
 import OrderSummary from '~/components/Shared/OrderSummary'
 
-export default function Order() {
+export default function Order({ current, addItem }) {
   return (
     <>
       <Headline title='Order Details' />
@@ -15,7 +15,11 @@ export default function Order() {
             <Form />
           </div>
           <div className='my-10'>
-            <OrderSummary />
+            <OrderSummary
+              current={current}
+              addItem={addItem}
+              action='confirm'
+            />
           </div>
         </div>
       </div>

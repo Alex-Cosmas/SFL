@@ -1,23 +1,24 @@
 // import Layout from '~/components/Layout'
-import { useMachine } from "@xstate/react";
-import MainLayout from "~/components/Layout";
-import { cartMachine } from "../lib/services/checkout";
-import "../styles/globals.css";
+import { useMachine } from '@xstate/react'
+import MainLayout from '~/components/Layout'
+import { cartMachine } from '../lib/services/checkout'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  const [current, send] = useMachine(cartMachine);
-  const addItem = send;
-  const Layout = Component.Layout || DefaultLayout;
+  const [current, send] = useMachine(cartMachine)
+  // Global Action for the entire machine
+  const addItem = send
+  const Layout = Component.Layout || DefaultLayout
   let props = {
     ...pageProps,
     addItem,
     current,
-  };
+  }
   return (
     <Layout>
       <Component {...props} />
     </Layout>
-  );
+  )
 }
 
 const DefaultLayout = ({ children }) => {
@@ -25,11 +26,11 @@ const DefaultLayout = ({ children }) => {
     <div>
       {/* <Header /> */}
 
-      <div className="">
+      <div className=''>
         <MainLayout>{children} </MainLayout>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MyApp;
+export default MyApp
