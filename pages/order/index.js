@@ -9,8 +9,8 @@ export default function Order({ current, addItem }) {
     <>
       <Headline title='Order Details' />
 
-      <div className='container px-24 mx-auto'>
-        <div className='grid grid-cols-2 gap-8'>
+      <div className='container px-4 mx-auto md:px-24'>
+        <div className='grid gap-8 md:grid-cols-2'>
           <div className='my-10'>
             <Form />
           </div>

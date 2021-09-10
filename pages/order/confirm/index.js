@@ -8,9 +8,9 @@ export default function confirmOrder({ current, addItem }) {
     <>
       <Headline title='Confirm Order' />
 
-      <div className='container px-24 mx-auto'>
+      <div className='container px-4 mx-auto md:px-24'>
         <div className='my-10'>
-          <div className='grid grid-cols-2 gap-8'>
+          <div className='grid gap-8 md:grid-cols-2'>
             <div className=''>
               <Form />
             </div>
